@@ -420,6 +420,7 @@ Ship = function () {
       this.delayBeforeBullet -= delta;
     }
     if (KEY_STATUS.space) {
+      this.delayBeforeBullet = 10;
       if (this.delayBeforeBullet <= 0) {
         for (var i = 0; i < this.bullets.length; i++) {
           if (!this.bullets[i].visible) {
